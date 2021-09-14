@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>今日心得</title>
+    <link href="/2021/09/14/%E4%BB%8A%E6%97%A5%E5%BF%83%E5%BE%97/"/>
+    <url>/2021/09/14/%E4%BB%8A%E6%97%A5%E5%BF%83%E5%BE%97/</url>
+    
+    <content type="html"><![CDATA[<h1 id="今天又是CV的一天"><a href="#今天又是CV的一天" class="headerlink" title="今天又是CV的一天"></a>今天又是CV的一天</h1><h2 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h2><p>反转元音字母</p><p>指针1从头遍历，指针2从尾遍历，都遇到元音字母时交换。</p><p>为了查询速度为常数时间项，建立元音字母的哈希Set </p><h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><p>强制类型转换</p><p>反转int整数，但是int可能越界，遇到异常需要置0.</p><p>用一个快捷判断就好了 (int)n == n ? (int)n : 0</p><h2 id="散会"><a href="#散会" class="headerlink" title="散会"></a>散会</h2><p>就这样吧</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技巧</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>check</title>
     <link href="/2021/09/13/check/"/>
     <url>/2021/09/13/check/</url>
