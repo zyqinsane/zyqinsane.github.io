@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Git</title>
+    <link href="/2021/09/14/Git/"/>
+    <url>/2021/09/14/Git/</url>
+    
+    <content type="html"><![CDATA[<h1 id="工欲善其事，必先利其器"><a href="#工欲善其事，必先利其器" class="headerlink" title="工欲善其事，必先利其器"></a>工欲善其事，必先利其器</h1><p>还是得把git玩熟了。做博客就是先熟悉<a href="https://github.com/giacgiuliari/ccr-internet-backbones-in-space">github</a>的过程。</p><h2 id="git常用操作mark一下"><a href="#git常用操作mark一下" class="headerlink" title="git常用操作mark一下"></a>git常用操作mark一下</h2><h3 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h3><p><code>git init</code> 初始化仓库<br><code>git clone</code> 拷贝一份远程仓库</p><h3 id="提交与修改"><a href="#提交与修改" class="headerlink" title="提交与修改"></a>提交与修改</h3><p><code>git add</code> 添加文件到仓库<br><code>git status</code> 查看仓库现在状态，显示变更文件<br><code>git commit</code> 提交暂存到本地仓库<br><code>git reset</code> 回退版本<br><code>git rm</code> 删除工作区文件<br><code>git mv</code> 移动或重命名工作区文件</p><h3 id="提交日志"><a href="#提交日志" class="headerlink" title="提交日志"></a>提交日志</h3><p><code>git log</code> 查看历史提交记录<br><code>git blame &lt;file&gt;</code> 以列表形式查看指定文件的历史修改记录</p><h3 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h3><p><code>git remote</code> 远程仓库操作<br><code>git fetch</code> 从远程获取代码库<br><code>git pull</code> 下载远程代码并合并<br><code>git push</code> 上传远程代码并合并</p><h2 id="散会"><a href="#散会" class="headerlink" title="散会"></a>散会</h2><p>饿了，开饭。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Git</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>git</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>docker</title>
     <link href="/2021/09/14/docker/"/>
     <url>/2021/09/14/docker/</url>
