@@ -18,7 +18,7 @@
   <meta name="author" content="WillChou">
   <meta name="keywords" content="">
   
-  <title>Git - Zyq</title>
+  <title>numpy - Zyq</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -182,7 +182,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Git">
+            <span class="h2" id="subtitle" title="numpy">
               
             </span>
 
@@ -192,8 +192,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-09-14 17:21" pubdate>
-        2021年9月14日 下午
+      <time datetime="2021-09-27 21:42" pubdate>
+        2021年9月27日 晚上
       </time>
     </span>
   
@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      213 字
+      174 字
     </span>
   
 
@@ -244,15 +244,19 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Git</h1>
+            <h1 style="display: none">numpy</h1>
             
             <div class="markdown-body">
-              <h1 id="工欲善其事，必先利其器"><a href="#工欲善其事，必先利其器" class="headerlink" title="工欲善其事，必先利其器"></a>工欲善其事，必先利其器</h1><p>还是得把git玩熟了。做博客就是先熟悉<a target="_blank" rel="noopener" href="https://github.com/giacgiuliari/ccr-internet-backbones-in-space">github</a>的过程。</p>
-<h2 id="git常用操作mark一下"><a href="#git常用操作mark一下" class="headerlink" title="git常用操作mark一下"></a>git常用操作mark一下</h2><h3 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h3><p><code>git init</code> 初始化仓库<br><code>git clone</code> 拷贝一份远程仓库</p>
-<h3 id="提交与修改"><a href="#提交与修改" class="headerlink" title="提交与修改"></a>提交与修改</h3><p><code>git add</code> 添加文件到仓库<br><code>git status</code> 查看仓库现在状态，显示变更文件<br><code>git commit</code> 提交暂存到本地仓库<br><code>git reset</code> 回退版本<br><code>git rm</code> 删除工作区文件<br><code>git mv</code> 移动或重命名工作区文件</p>
-<h3 id="提交日志"><a href="#提交日志" class="headerlink" title="提交日志"></a>提交日志</h3><p><code>git log</code> 查看历史提交记录<br><code>git blame &lt;file&gt;</code> 以列表形式查看指定文件的历史修改记录</p>
-<h3 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h3><p><code>git remote</code> 远程仓库操作<br><code>git fetch</code> 从远程获取代码库<br><code>git pull</code> 下载远程代码并合并<br><code>git push</code> 上传远程代码并合并</p>
-<h2 id="散会"><a href="#散会" class="headerlink" title="散会"></a>散会</h2><p>饿了，开饭。</p>
+              <h1 id="随手记录一下"><a href="#随手记录一下" class="headerlink" title="随手记录一下"></a>随手记录一下</h1><h2 id="numpy-histogram"><a href="#numpy-histogram" class="headerlink" title="numpy.histogram"></a>numpy.histogram</h2><p>histogram(a,bins = 10, range =None, weights =None,density =False)</p>
+<p>a表示待统计数据的数组</p>
+<p>bins指代统计的区间个数</p>
+<p>range表示统计范围的下界和上界</p>
+<p>weights指定数组每个元素的权值，histogram（）会对区间中数组所对应的权值进行求和</p>
+<p>density为True时，返回每个区间的概率密度；False，返回每个区间中元素的个数</p>
+<pre><code>&gt;&gt;&gt; a = np.random.rand(100)      #表示在（0,1）之间随机产生100个数
+&gt;&gt;&gt; np.histogram(a,bins=5,range=(0,1))
+(array([10, 24, 17, 19, 30]), array([0. , 0.2, 0.4, 0.6, 0.8, 1. ]))        #表示在[0,0.2)之间有10个数，以此类推
+</code></pre>
 
             </div>
             <hr>
@@ -262,17 +266,10 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Git/">Git</a>
+                      <a class="hover-with-bg" href="/categories/Python/">Python</a>
                     
                   </div>
                 
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/git/">git</a>
-                    
-                  </div>
                 
               </div>
               
@@ -287,18 +284,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/09/27/Python/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">numpy</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/09/14/docker/">
-                        <span class="hidden-mobile">docker</span>
+                      <a href="/2021/09/14/Git/">
+                        <span class="hidden-mobile">Git</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
