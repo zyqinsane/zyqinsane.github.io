@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>docker学习</title>
+    <link href="/2021/10/29/docker%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2021/10/29/docker%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="docker远程开发有感"><a href="#docker远程开发有感" class="headerlink" title="docker远程开发有感"></a>docker远程开发有感</h1><h2 id="pycharm连接docker"><a href="#pycharm连接docker" class="headerlink" title="pycharm连接docker"></a>pycharm连接docker</h2><p>建立磁盘映射</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">docker <span class="hljs-built_in">run</span> -<span class="hljs-keyword">it</span> -v /xxx/xxx:/xxx containerID<br></code></pre></td></tr></table></figure><p>/xxx/xxx 宿主机</p><p>/xxx docker环境主机</p><p>ssh连接远程服务器</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">docker <span class="hljs-built_in">run</span> -<span class="hljs-built_in">id</span> -p 本地端口(随便设置):<span class="hljs-number">22</span>(docker端口)/xxx/xxx:/xxx containerID<br></code></pre></td></tr></table></figure><h2 id="重新进入容器"><a href="#重新进入容器" class="headerlink" title="重新进入容器"></a>重新进入容器</h2><p>守护进程docker run -id<br>守护进程运行的时候使用<code>docker attach</code>不会重新进入容器，使用<code>docker run</code>会重新新建一个容器</p><p>此时容器运行的进程是ssh，而不是/bin/bash 也没有虚拟终端（-it）参数，所以是进入不到的.<br>这个时候使用</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">docker exec -it containerID <span class="hljs-regexp">/bin/</span>bash<br></code></pre></td></tr></table></figure><p>退出的时候使用<br><code>ctrl+P+Q</code></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Docker</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>numpy</title>
     <link href="/2021/09/27/Python/"/>
     <url>/2021/09/27/Python/</url>
