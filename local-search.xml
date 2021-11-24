@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>每日嗑盐20211123</title>
+    <link href="/2021/11/24/%E6%AF%8F%E6%97%A5%E5%97%91%E7%9B%9020211123/"/>
+    <url>/2021/11/24/%E6%AF%8F%E6%97%A5%E5%97%91%E7%9B%9020211123/</url>
+    
+    <content type="html"><![CDATA[<h1 id="1123-brainstorm"><a href="#1123-brainstorm" class="headerlink" title="1123 brainstorm"></a>1123 brainstorm</h1><p>拓宽新思路，不能局限原论文。</p><h2 id="通信过程"><a href="#通信过程" class="headerlink" title="通信过程"></a>通信过程</h2><p>PaCo模型选出来，从9条链路备选中，选出一条时延最低的链路，然后选择这条链路转发。可能出现四种情况，两种会受影响；一种是链路中断，一种是链路资源浪费。</p><h2 id="马尔可夫预测模型"><a href="#马尔可夫预测模型" class="headerlink" title="马尔可夫预测模型"></a>马尔可夫预测模型</h2><p>地面站上空的天气状况，下一时刻的状态仅和当前时刻有关，建模为一阶马尔可夫模型。自行设置状态转移矩阵。每十分钟预测一次，为的是和ILWC数据对齐。将预测结果和ILWC数据进行对比，得到四种情况的数目情况。</p><h2 id="实验过程"><a href="#实验过程" class="headerlink" title="实验过程"></a>实验过程</h2><p>100次转发，70～80次链路资源浪费，0～3次链路中断。</p><h2 id="误差分析"><a href="#误差分析" class="headerlink" title="误差分析"></a>误差分析</h2><p>1.模型本身就有问题，概率不能随意设定。ILWC原论文虽然采用的也是马尔可夫模型，但是参数是通过模型得到的。</p><p>2.所以和ILWC数据的对比也就没意义了。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>科研思路</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>paper-reviewing</title>
     <link href="/2021/11/23/paper-reviewing/"/>
     <url>/2021/11/23/paper-reviewing/</url>
