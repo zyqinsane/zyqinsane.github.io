@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>git学习</title>
+    <link href="/2021/11/25/git%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2021/11/25/git%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="如何使用Git"><a href="#如何使用Git" class="headerlink" title="如何使用Git"></a>如何使用Git</h1><p>今天使用Git上传了pycharm的本地代码，总结一下教训</p><h2 id="创建新仓库"><a href="#创建新仓库" class="headerlink" title="创建新仓库"></a>创建新仓库</h2><p>‘’‘<br>git init<br>git add .<br>git commit -m “xxx”<br>git branch -M main<br>git remote add origin <a href="https://github.com/zyqinsane/zyqgenius.git">https://github.com/zyqinsane/zyqgenius.git</a><br>git push -u origin main<br>’‘’</p><p>git branch -M 重命名分支，默认分支为master</p><p>本地是origin</p><p>默认的话是<br>‘’‘<br>git push -u origin master<br>’‘’</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Git</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>每日科研1124</title>
     <link href="/2021/11/24/%E6%AF%8F%E6%97%A5%E7%A7%91%E7%A0%941124/"/>
     <url>/2021/11/24/%E6%AF%8F%E6%97%A5%E7%A7%91%E7%A0%941124/</url>
