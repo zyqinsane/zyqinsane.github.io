@@ -18,9 +18,25 @@
   <meta name="author" content="WillChou">
   <meta name="keywords" content="">
   
-  <title>Zyq</title>
+  <title>Arrays - Zyq</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -55,7 +71,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -166,17 +182,50 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="一个乱七八糟的角落">
+            <span class="h2" id="subtitle" title="Arrays">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-12-04 18:19" pubdate>
+        2021年12月4日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      242 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      3
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -185,107 +234,87 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/13/check/" target="_self">
-          check
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/09/13/check/" target="_self">
-          
-          
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Arrays</h1>
             
-          
-          how to live
-        </a>
-      </p>
+            <div class="markdown-body">
+              <h1 id="数组与矩阵"><a href="#数组与矩阵" class="headerlink" title="数组与矩阵"></a>数组与矩阵</h1><h2 id="重复数字"><a href="#重复数字" class="headerlink" title="重复数字"></a>重复数字</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs excel">在一个长度为 <span class="hljs-built_in">n</span> 的数组里的所有数字都在 <span class="hljs-number">0</span> 到 <span class="hljs-built_in">n</span>-<span class="hljs-number">1</span> 的范围内。数组中某些数字是重复的，但不知道有几个数字是重复的，也不知道每个数字重复几次。请找出数组中任意一个重复的数字。<br><br></code></pre></td></tr></table></figure>
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-13 14:14" pubdate>
-              2021-09-13
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
+<h2 id="法1-HashSet"><a href="#法1-HashSet" class="headerlink" title="法1: HashSet"></a>法1: HashSet</h2><h3 id="时间复杂度：O-N-空间复杂度：O-N"><a href="#时间复杂度：O-N-空间复杂度：O-N" class="headerlink" title="时间复杂度：O(N) 空间复杂度：O(N)"></a>时间复杂度：O(N) 空间复杂度：O(N)</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">HashSet&lt;<span class="hljs-type">Integer</span>&gt; <span class="hljs-keyword">set</span> = <span class="hljs-built_in">new</span> HashSet&lt;&gt;();<br>        <span class="hljs-type">int</span> res = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i =<span class="hljs-number">0</span>;i&lt;nums.length;i++)<br>        &#123;<br>            <span class="hljs-keyword">if</span>(<span class="hljs-keyword">set</span>.contains(nums[i]))<br>            &#123;<br>                res = nums[i];<br>            &#125;<br>            <span class="hljs-keyword">set</span>.<span class="hljs-keyword">add</span>(nums[i]);<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br></code></pre></td></tr></table></figure>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/09/13/New-Boy/" target="_self">
-          New Boy
-        </a>
-      </h1>
+<h2 id="法2-排序"><a href="#法2-排序" class="headerlink" title="法2: 排序"></a>法2: 排序</h2><p>因为长度为N，区间为0～N-1，所以只要有数字不在该在的位置上就说明有重复<br>nums[i]!=i</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs arduino"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;nums.length;i++)<br>       &#123;<br>           <span class="hljs-keyword">while</span>(nums[i] != i)<br>           &#123;<br>               <span class="hljs-keyword">if</span>(nums[i]==nums[nums[i]])<br>               &#123;<br>                   <span class="hljs-keyword">return</span> nums[i];<br>               &#125;<br>               <span class="hljs-built_in">swap</span>(nums,i,nums[i]);<br>           &#125;<br>       &#125;<br>       <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>   &#125;<br>   <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-keyword">int</span> nums[],<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span></span><br><span class="hljs-function">   </span>&#123;   <br>       <span class="hljs-keyword">int</span> tmp;<br>       tmp = nums[a];<br>       nums[a] = nums[b];<br>       nums[b] = tmp;<br>   &#125;<br></code></pre></td></tr></table></figure>
 
-      <p class="index-excerpt">
-        <a href="/2021/09/13/New-Boy/" target="_self">
-          
-          
-            
-          
-          今日任务hey各位，今天是个美好的一天
-不熬夜
-还不知道的事不知道将会遇到什么
-再说吧再会
-参考文献
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-09-13 11:03" pubdate>
-              2021-09-13
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </span>
-  </nav>
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Algorithms/">Algorithms</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/25/git%E5%AD%A6%E4%B9%A0/">
+                        <span class="hidden-mobile">git学习</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -365,9 +394,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
