@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>数据读取</title>
+    <link href="/2021/12/06/%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/"/>
+    <url>/2021/12/06/%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
+    
+    <content type="html"><![CDATA[<h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1><h2 id="读取文件的某一行"><a href="#读取文件的某一行" class="headerlink" title="读取文件的某一行"></a>读取文件的某一行</h2><h3 id="法1-从头扫描，跳过不关心的行"><a href="#法1-从头扫描，跳过不关心的行" class="headerlink" title="法1:从头扫描，跳过不关心的行"></a>法1:从头扫描，跳过不关心的行</h3><figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs haskell"><span class="hljs-keyword">import</span> linecache<br><span class="hljs-title">linecache</span>.getline(&#x27;./<span class="hljs-class"><span class="hljs-keyword">data</span>.txt&#x27;, 5)</span><br></code></pre></td></tr></table></figure><h3 id="法2-使用linecache"><a href="#法2-使用linecache" class="headerlink" title="法2:使用linecache"></a>法2:使用linecache</h3><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&#x27;./data.txt&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>) <span class="hljs-keyword">as</span> f:<br>    <span class="hljs-keyword">for</span> <span class="hljs-built_in">num</span>, <span class="hljs-built_in">line</span> <span class="hljs-keyword">in</span> enumerate(f):<br>        <span class="hljs-keyword">if</span> <span class="hljs-built_in">num</span> == <span class="hljs-number">4</span>:<br>            print(<span class="hljs-built_in">line</span>)<br>            break<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Python</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Arrays</title>
     <link href="/2021/12/04/Arrays/"/>
     <url>/2021/12/04/Arrays/</url>
