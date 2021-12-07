@@ -18,7 +18,7 @@
   <meta name="author" content="WillChou">
   <meta name="keywords" content="">
   
-  <title>Arrays - Zyq</title>
+  <title>Arrays and Matrixs - Zyq</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -182,7 +182,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Arrays">
+            <span class="h2" id="subtitle" title="Arrays and Matrixs">
               
             </span>
 
@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      844 字
+      1k 字
     </span>
   
 
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      13
+      15
        分钟
     </span>
   
@@ -244,7 +244,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Arrays</h1>
+            <h1 style="display: none">Arrays and Matrixs</h1>
             
             <div class="markdown-body">
               <h1 id="数组与矩阵"><a href="#数组与矩阵" class="headerlink" title="数组与矩阵"></a>数组与矩阵</h1><h2 id="重复数字"><a href="#重复数字" class="headerlink" title="重复数字"></a>重复数字</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs excel">在一个长度为 <span class="hljs-built_in">n</span> 的数组里的所有数字都在 <span class="hljs-number">0</span> 到 <span class="hljs-built_in">n</span>-<span class="hljs-number">1</span> 的范围内。数组中某些数字是重复的，但不知道有几个数字是重复的，也不知道每个数字重复几次。请找出数组中任意一个重复的数字。<br><br></code></pre></td></tr></table></figure>
@@ -266,7 +266,11 @@
 <li>当两个指针相遇或者遍历完时停止</li>
 </ol>
 <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs processing"><span class="hljs-keyword">public</span> <span class="hljs-keyword">String</span> replaceSpace(StringBuffer <span class="hljs-built_in">str</span>) &#123;<br>    <span class="hljs-built_in">int</span> P1 = <span class="hljs-built_in">str</span>.length() - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt;= P1; i++)<br>        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">str</span>.charAt(i) == <span class="hljs-string">&#x27; &#x27;</span>)<br>            <span class="hljs-built_in">str</span>.<span class="hljs-built_in">append</span>(<span class="hljs-string">&quot;  &quot;</span>);<br><br>    <span class="hljs-built_in">int</span> P2 = <span class="hljs-built_in">str</span>.length() - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (P1 &gt;= <span class="hljs-number">0</span> &amp;&amp; P2 &gt; P1) &#123;<br>        <span class="hljs-built_in">char</span> c = <span class="hljs-built_in">str</span>.charAt(P1--);<br>        <span class="hljs-keyword">if</span> (c == <span class="hljs-string">&#x27; &#x27;</span>) &#123;<br>            <span class="hljs-built_in">str</span>.setCharAt(P2--, <span class="hljs-string">&#x27;0&#x27;</span>);<br>            <span class="hljs-built_in">str</span>.setCharAt(P2--, <span class="hljs-string">&#x27;2&#x27;</span>);<br>            <span class="hljs-built_in">str</span>.setCharAt(P2--, <span class="hljs-string">&#x27;%&#x27;</span>);<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-built_in">str</span>.setCharAt(P2--, c);<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">str</span>.toString();<br>&#125;<br></code></pre></td></tr></table></figure>
-
+<h2 id="0-1序列中连续1的个数"><a href="#0-1序列中连续1的个数" class="headerlink" title="0,1序列中连续1的个数"></a>0,1序列中连续1的个数</h2><p>给定一个二进制数组， 计算其中最大连续 1 的个数。</p>
+<h3 id="法1"><a href="#法1" class="headerlink" title="法1:"></a>法1:</h3><p>临时变量tmp记录1的个数，遇到0先比较，然后清零；注意最后一位数字是1的情况</p>
+<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs aspectj"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">findMaxConsecutiveOnes</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> tmp = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> maxNum = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> num : nums)<br>        &#123;<br>            <span class="hljs-keyword">if</span> (num == <span class="hljs-number">1</span>)<br>            &#123;<br>                tmp += <span class="hljs-number">1</span>;<br>            &#125;<br>            <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> <span class="hljs-params">(tmp &gt; maxNum)</span></span><br><span class="hljs-function">            </span>&#123;<br>                maxNum = tmp;<br>                tmp = <span class="hljs-number">0</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span><br>                tmp = <span class="hljs-number">0</span>;<br>            <span class="hljs-keyword">if</span>(tmp &gt; maxNum)<br>                maxNum = tmp;<br>        &#125;<br>        <span class="hljs-keyword">return</span> maxNum;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="法2"><a href="#法2" class="headerlink" title="法2:"></a>法2:</h3><p>小技巧：tmp*num+num，可以做到0的时候置0，1的时候➕1</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    public <span class="hljs-built_in">int</span> findMaxConsecutiveOnes(<span class="hljs-built_in">int</span>[] nums) &#123;<br>        <span class="hljs-built_in">int</span> tmp = <span class="hljs-number">0</span>;<br>        <span class="hljs-built_in">int</span> maxNum = <span class="hljs-number">0</span>;<br>        <br>        <span class="hljs-keyword">for</span>(<span class="hljs-built_in">int</span> <span class="hljs-built_in">num</span>: nums)<br>        &#123;<br>            tmp = tmp*<span class="hljs-built_in">num</span> + <span class="hljs-built_in">num</span>;<br>            <span class="hljs-keyword">if</span> (tmp &gt; maxNum)<br>            &#123;<br>                maxNum = tmp;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> maxNum;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>
