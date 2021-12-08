@@ -212,11 +212,10 @@
           
             
           
-          链表逆序输出链表法1直接用栈实现，基本方法
-法2先存到数组中，再reverse
-法3反转链表正序输出
-法4递归，回溯法
+          链表逆序输出链表ArrayList转为int数组的接口想要转换成int[]类型，就得先转成IntStream。通过mapToInt()把Stream调用Integer::valueOf来转成IntStream而IntStream中默认toArray()转成int[]
+int[] = list.stream().mapToInt(Integer::valueOf).toArray()
 
+法1直接用栈
         </a>
       </p>
 
