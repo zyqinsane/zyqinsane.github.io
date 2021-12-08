@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>链表</title>
+    <link href="/2021/12/08/%E9%93%BE%E8%A1%A8/"/>
+    <url>/2021/12/08/%E9%93%BE%E8%A1%A8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h1><h2 id="逆序输出链表"><a href="#逆序输出链表" class="headerlink" title="逆序输出链表"></a>逆序输出链表</h2><h3 id="法1"><a href="#法1" class="headerlink" title="法1"></a>法1</h3><p>直接用栈实现，基本方法</p><h3 id="法2"><a href="#法2" class="headerlink" title="法2"></a>法2</h3><p>先存到数组中，再reverse</p><h3 id="法3"><a href="#法3" class="headerlink" title="法3"></a>法3</h3><p>反转链表正序输出</p><h3 id="法4"><a href="#法4" class="headerlink" title="法4"></a>法4</h3><p>递归，回溯法</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数据读取</title>
     <link href="/2021/12/06/%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/"/>
     <url>/2021/12/06/%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
@@ -23,7 +42,7 @@
   
   
   <entry>
-    <title>Arrays and Matrixs</title>
+    <title>数组与矩阵</title>
     <link href="/2021/12/04/Arrays/"/>
     <url>/2021/12/04/Arrays/</url>
     
@@ -32,7 +51,7 @@
     
     <categories>
       
-      <category>Algorithms</category>
+      <category>数据结构</category>
       
     </categories>
     
