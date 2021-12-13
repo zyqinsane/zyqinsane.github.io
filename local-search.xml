@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>大组会1213</title>
+    <link href="/2021/12/14/%E5%A4%A7%E7%BB%84%E4%BC%9A1213/"/>
+    <url>/2021/12/14/%E5%A4%A7%E7%BB%84%E4%BC%9A1213/</url>
+    
+    <content type="html"><![CDATA[<h1 id="整理一下"><a href="#整理一下" class="headerlink" title="整理一下"></a>整理一下</h1><h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><p>问： 预测组网关键技术指的是哪些？<br>答：单链路预测（信道建模）+多链路组网</p><p>问：如果有地面站性能最佳，为什么不直接用那个？<br>答：可能并不代表全部时间段内都不存在问题</p><h2 id="赵老师"><a href="#赵老师" class="headerlink" title="赵老师"></a>赵老师</h2><p>原论文是说这个模型在微波链路的场景下可以100%可用<br>我的结果表明激光链路条件下天气影响会导致可能出现55/500的概率不可用？<br>第一步证明了真的会对激光链路带来影响</p><p>下一步就是如何改进</p><ol><li>缩短时隙，比1min更精确</li><li>增加备选地面站个数</li></ol><h2 id="方老师"><a href="#方老师" class="headerlink" title="方老师"></a>方老师</h2><p>这个真的是和预测相关的吗？</p><h2 id="李老师"><a href="#李老师" class="headerlink" title="李老师"></a>李老师</h2><ol><li><p>不一定激光的性能真的差，把论文里的雨衰数据代入我的模型，看一下结果，是不是会比55更差，如果更差就说明激光好嘛</p></li><li><p>可以加入吞吐量的其他QoS因素看一下我的模型中的网络性能</p></li><li><p>0，1模型改进，性能差一点也能接受，量化ILWC对链路的恶化影响</p></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>科研思路</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>树</title>
     <link href="/2021/12/09/%E6%A0%91/"/>
     <url>/2021/12/09/%E6%A0%91/</url>
