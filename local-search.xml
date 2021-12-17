@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>requirements</title>
+    <link href="/2021/12/17/requirements/"/>
+    <url>/2021/12/17/requirements/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Stay-Hungry，Stay-Foolish"><a href="#Stay-Hungry，Stay-Foolish" class="headerlink" title="Stay Hungry，Stay Foolish"></a>Stay Hungry，Stay Foolish</h1><p>熟悉集合框架、I/O框架，多线程，并发</p><p>常用网络协议，HTTP/S，FTP，TCP/UDP，熟悉Socket网络编程</p><p>熟悉Spring，Spring Boot， Mybatis</p><p>熟悉MySQL数据库 ，Redis缓存技术</p><p>熟练使用Maven，Git项目管理工具    </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术栈</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>二分搜索</title>
     <link href="/2021/12/14/%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/"/>
     <url>/2021/12/14/%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/</url>
