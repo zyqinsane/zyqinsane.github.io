@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Thinking in Java</title>
+    <link href="/2021/12/21/Java/"/>
+    <url>/2021/12/21/Java/</url>
+    
+    <content type="html"><![CDATA[<h1 id="对象导论"><a href="#对象导论" class="headerlink" title="对象导论"></a>对象导论</h1><h1 id="一切都是对象"><a href="#一切都是对象" class="headerlink" title="一切都是对象"></a>一切都是对象</h1><h1 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h1><h1 id="控制执行流程"><a href="#控制执行流程" class="headerlink" title="控制执行流程"></a>控制执行流程</h1><h1 id="初始化与清理"><a href="#初始化与清理" class="headerlink" title="初始化与清理"></a>初始化与清理</h1><h1 id="访问控制权限"><a href="#访问控制权限" class="headerlink" title="访问控制权限"></a>访问控制权限</h1><h1 id="复用类"><a href="#复用类" class="headerlink" title="复用类"></a>复用类</h1><h1 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h1><h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><p>接口类比C++纯虚函数，抽象类，不需要知道内部实现，就是告诉你有这么个东西（接口），具体怎么实现的话，自己继承的时候再添。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>requirements</title>
     <link href="/2021/12/17/requirements/"/>
     <url>/2021/12/17/requirements/</url>
