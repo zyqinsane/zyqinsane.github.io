@@ -4,6 +4,38 @@
   
   
   <entry>
+    <title>Microsoft</title>
+    <link href="/2022/01/17/Microsoft/"/>
+    <url>/2022/01/17/Microsoft/</url>
+    
+    <content type="html"><![CDATA[<p>面试软件：Teams<br>coding ：编辑器 or IDE 随意 </p><h1 id="Group"><a href="#Group" class="headerlink" title="Group"></a>Group</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><ol><li>自我介绍</li><li>项目 —— mySQL</li><li>二维矩阵，存放整形数字，实现更新某一个元素的数值，查询二维矩阵子矩阵的平均值</li></ol><h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>力扣308 二维区域和检索 —— 可变</p><h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>字符串数组，找到所有重复字符串，要求用字典树</p><h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p>分数转小数，字符串输出，可能出现循环小数</p><h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p>没出现过的最小整数<br>原地哈希</p><h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><p>OS<br>设计模式</p><h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><p>螺旋矩阵<br>二分</p><h2 id="8"><a href="#8" class="headerlink" title="8"></a>8</h2><p>给定BST，除了指向左右节点的指针，还有指向父节点的指针，给定任意一个节点，找出大于此节点的值，并且最小的节点的值</p><h1 id="牛客"><a href="#牛客" class="headerlink" title="牛客"></a>牛客</h1><h1 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>面经</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>微软</title>
+    <link href="/2022/01/17/%E5%BE%AE%E8%BD%AF/"/>
+    <url>/2022/01/17/%E5%BE%AE%E8%BD%AF/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>操作系统</title>
     <link href="/2022/01/10/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <url>/2022/01/10/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
