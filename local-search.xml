@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Linux命令备忘</title>
+    <link href="/2022/01/23/Linux%E5%91%BD%E4%BB%A4%E5%A4%87%E5%BF%98/"/>
+    <url>/2022/01/23/Linux%E5%91%BD%E4%BB%A4%E5%A4%87%E5%BF%98/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Linux开发常用命令汇总"><a href="#Linux开发常用命令汇总" class="headerlink" title="Linux开发常用命令汇总"></a>Linux开发常用命令汇总</h1><h2 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h2><p>最常用的切换目录指令</p><ol><li><p><strong>前往相对路径（两种都可以）</strong><br><code>cd ./filedir...</code><br><code>cd filedir...</code></p></li><li><p>前往绝对路径<br><code>cd root/...</code></p></li><li><p><strong>回到用户主目录</strong><br><code>cd ~ || cd</code></p></li><li><p><strong>回到上级目录</strong><br><code>cd ..</code></p></li><li><p>回到上上级目录<br><code>cd ../../</code></p></li><li><p><strong>回到刚才工作的目录</strong><br><code>cd -</code></p></li><li><p>使用环境变量<br><code>cd $TEST_PATH</code></p></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java容器</title>
     <link href="/2022/01/23/Java%E5%AE%B9%E5%99%A8/"/>
     <url>/2022/01/23/Java%E5%AE%B9%E5%99%A8/</url>
