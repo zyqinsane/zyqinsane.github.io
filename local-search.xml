@@ -8,7 +8,7 @@
     <link href="/2022/01/23/Java%E5%AE%B9%E5%99%A8/"/>
     <url>/2022/01/23/Java%E5%AE%B9%E5%99%A8/</url>
     
-    <content type="html"><![CDATA[<h1 id="聊聊容器"><a href="#聊聊容器" class="headerlink" title="聊聊容器"></a>聊聊容器</h1><p>容器的诞生使得Java的应用更广了，而不局限于固定的数组。</p><p>Java容器其实就是四类，Map,Set,List,Queue.</p><p>然后其他的类实现了这些接口。</p><p>如<br>Queue是接口，LinkedList实现了它，所以有：<br>    Queue<T> queue = new LinkedList&lt;&gt;();<br>Deque是继承自Queue的接口，LinkedList实现了它，Deque写在前面作为声明，所以有<br>    Deque<T> dq = new LinkedList&lt;&gt;();</p><p>此外，不要再用Stack了，Stack和Vector一样，是早期Java的产物，应该被废弃。</p><p>Stack可以用Deque实现。Deque有Stack的接口。</p><p>想想当初刚开始刷题的时候看到这个都很懵逼，还是得深入底层，知道容器对应的继承关系。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="聊聊容器"><a href="#聊聊容器" class="headerlink" title="聊聊容器"></a>聊聊容器</h1><p>容器的诞生使得Java的应用更广了，而不局限于固定的数组。</p><p>Java容器其实就是四类，Map,Set,List,Queue.</p><p>然后其他的类实现了这些接口。</p><p>如<br>Queue是接口，LinkedList实现了它，所以有：<br><code>Queue&lt;T&gt; queue = new LinkedList&lt;&gt;();</code><br>Deque是继承自Queue的接口，LinkedList实现了它，Deque写在前面作为声明，所以有<br><code>Deque&lt;T&gt; dq = new LinkedList&lt;&gt;();</code></p><p>此外，不要再用Stack了，Stack和Vector一样，是早期Java的产物，应该被废弃。</p><p>Stack可以用Deque实现。Deque有Stack的接口。</p><p>想想当初刚开始刷题的时候看到这个都很懵逼，还是得深入底层，知道容器对应的继承关系。</p>]]></content>
     
     
     <categories>
