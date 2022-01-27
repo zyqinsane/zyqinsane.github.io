@@ -27,7 +27,7 @@
     <link href="/2022/01/23/Java%E5%AE%B9%E5%99%A8/"/>
     <url>/2022/01/23/Java%E5%AE%B9%E5%99%A8/</url>
     
-    <content type="html"><![CDATA[<h1 id="聊聊容器"><a href="#聊聊容器" class="headerlink" title="聊聊容器"></a>聊聊容器</h1><p>容器的诞生使得Java的应用更广了，而不局限于固定的数组。</p><p>Java容器其实就是四类，Map,Set,List,Queue.</p><p>然后其他的类实现了这些接口。</p><p>如<br>Queue是接口，LinkedList实现了它，所以有：<br><code>Queue&lt;T&gt; queue = new LinkedList&lt;&gt;();</code><br>Deque是继承自Queue的接口，LinkedList实现了它，Deque写在前面作为声明，所以有<br><code>Deque&lt;T&gt; dq = new LinkedList&lt;&gt;();</code></p><p>此外，不要再用Stack了，Stack和Vector一样，是早期Java的产物，应该被废弃。</p><p>Stack可以用Deque实现。Deque有Stack的接口。</p><p>想想当初刚开始刷题的时候看到这个都很懵逼，还是得深入底层，知道容器对应的继承关系。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="聊聊容器"><a href="#聊聊容器" class="headerlink" title="聊聊容器"></a>聊聊容器</h1><p>容器的诞生使得Java的应用更广了，而不局限于固定的数组。</p><p>Java容器其实就是四类，Map,Set,List,Queue.</p><p>然后其他的类实现了这些接口。</p><p>如<br>Queue是接口，LinkedList实现了它，所以有：<br><code>Queue&lt;T&gt; queue = new LinkedList&lt;&gt;();</code><br>Deque是继承自Queue的接口，LinkedList实现了它，Deque写在前面作为声明，所以有<br><code>Deque&lt;T&gt; dq = new LinkedList&lt;&gt;();</code></p><p>此外，不要再用Stack了，Stack和Vector一样，是早期Java的产物，应该被废弃。</p><p>Stack可以用Deque实现。Deque有Stack的接口。</p><p>想想当初刚开始刷题的时候看到这个都很懵逼，还是得深入底层，知道容器对应的继承关系。</p><p>ArrayDeque和LinkedList都是双端队列的实现类，区别是前者的底层是数组结构。</p><h2 id="为什么回溯的时候使用ArrayDeque而不是ArrayList"><a href="#为什么回溯的时候使用ArrayDeque而不是ArrayList" class="headerlink" title="为什么回溯的时候使用ArrayDeque而不是ArrayList"></a>为什么回溯的时候使用ArrayDeque而不是ArrayList</h2><p>分析二者remove()的源码可知：<br>arrayList如果删除不是size() - 1 位置上的元素时，需要先拷贝一份<br>ArrayDeque通过tail方法，不需要复制；但是ArrayList需要先copy，然后再删除。在需要大量删除操作的回溯法中，要养成用ArrayDeque的习惯。</p><p>ArrayList remove()</p><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-built_in">public</span> E remove(<span class="hljs-type">int</span> <span class="hljs-keyword">index</span>) &#123;<br>    range<span class="hljs-keyword">Check</span>(<span class="hljs-keyword">index</span>);<br> <br>    modCount++;<br>    E oldValue = elementData(<span class="hljs-keyword">index</span>);<br> <br>    <span class="hljs-type">int</span> numMoved = size - <span class="hljs-keyword">index</span> - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">if</span> (numMoved &gt; <span class="hljs-number">0</span>)<br>        <span class="hljs-keyword">System</span>.arraycopy(elementData, <span class="hljs-keyword">index</span>+<span class="hljs-number">1</span>, elementData, <span class="hljs-keyword">index</span>,<br>                         numMoved);<br>    elementData[<span class="hljs-comment">--size] = null; // clear to let GC do its work</span><br> <br>    <span class="hljs-keyword">return</span> oldValue;<br>&#125;<br></code></pre></td></tr></table></figure><p>ArrayDeque remove()</p><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">public</span> E <span class="hljs-function"><span class="hljs-title">removeLast</span>(<span class="hljs-params"></span>)</span> &#123;<br>    E x = pollLast();<br>    <span class="hljs-keyword">if</span> (x == <span class="hljs-literal">null</span>)<br>        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NoSuchElementException();<br>    <span class="hljs-keyword">return</span> x;<br>&#125;<br> <br> <br><span class="hljs-keyword">public</span> E <span class="hljs-function"><span class="hljs-title">pollLast</span>(<span class="hljs-params"></span>)</span> &#123;<br>    int t = (tail - <span class="hljs-number">1</span>) &amp; (elements.length - <span class="hljs-number">1</span>);<br>    <span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;unchecked&quot;</span>)<br>    E result = (E) elements[t];<br>    <span class="hljs-keyword">if</span> (result == <span class="hljs-literal">null</span>)<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>    elements[t] = <span class="hljs-literal">null</span>;<br>    tail = t;<br>    <span class="hljs-keyword">return</span> result;<br>&#125;<br><br></code></pre></td></tr></table></figure>]]></content>
     
     
     <categories>
@@ -54,19 +54,6 @@
       <category>面经</category>
       
     </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>微软</title>
-    <link href="/2022/01/17/%E5%BE%AE%E8%BD%AF/"/>
-    <url>/2022/01/17/%E5%BE%AE%E8%BD%AF/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
     
     
   </entry>
