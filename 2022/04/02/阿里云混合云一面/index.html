@@ -1,0 +1,531 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="WillChou">
+  <meta name="keywords" content="">
+  
+  <title>Zyq</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/iconfont_friend/iconfont.css">
+<link rel="stylesheet" href="/css/iconfont_cat/iconfont.css">
+<link rel="stylesheet" href="/css/iconfont_computer/iconfont.css">
+<link rel="stylesheet" href="/css/iconfont_fish/iconfont.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"zyqinsane.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>WillChou's blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-PersonalComputer"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-xiaoyugan"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-friendly"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/thoughts/">
+                <i class="iconfont icon-mao"></i>
+                自省
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/cool.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-04-02 14:36" pubdate>
+        2022年4月2日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      25
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <h1 id="阿里云混合云一面"><a href="#阿里云混合云一面" class="headerlink" title="阿里云混合云一面"></a>阿里云混合云一面</h1><h2 id="钉钉电话面试，后要求开摄像头"><a href="#钉钉电话面试，后要求开摄像头" class="headerlink" title="钉钉电话面试，后要求开摄像头"></a>钉钉电话面试，后要求开摄像头</h2><h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><h4 id="JRE和JDK的区别是什么？"><a href="#JRE和JDK的区别是什么？" class="headerlink" title="JRE和JDK的区别是什么？"></a>JRE和JDK的区别是什么？</h4><h4 id="Java程序从编写到运行经历了哪些步骤？"><a href="#Java程序从编写到运行经历了哪些步骤？" class="headerlink" title="Java程序从编写到运行经历了哪些步骤？"></a>Java程序从编写到运行经历了哪些步骤？</h4><h4 id="JVM的垃圾回收讲一讲？"><a href="#JVM的垃圾回收讲一讲？" class="headerlink" title="JVM的垃圾回收讲一讲？"></a>JVM的垃圾回收讲一讲？</h4><h4 id="JVM参数如何调优？"><a href="#JVM参数如何调优？" class="headerlink" title="JVM参数如何调优？"></a>JVM参数如何调优？</h4><h4 id="讲一讲Java集合的框架？"><a href="#讲一讲Java集合的框架？" class="headerlink" title="讲一讲Java集合的框架？"></a>讲一讲Java集合的框架？</h4><h4 id="HashMap底层用什么实现的？初始大小多大？"><a href="#HashMap底层用什么实现的？初始大小多大？" class="headerlink" title="HashMap底层用什么实现的？初始大小多大？"></a>HashMap底层用什么实现的？初始大小多大？</h4><h4 id="Java的幂等是什么？"><a href="#Java的幂等是什么？" class="headerlink" title="Java的幂等是什么？"></a>Java的幂等是什么？</h4><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="Java线程池是什么？用过吗？"><a href="#Java线程池是什么？用过吗？" class="headerlink" title="Java线程池是什么？用过吗？"></a>Java线程池是什么？用过吗？</h4><h4 id="Java如何实现线程安全？"><a href="#Java如何实现线程安全？" class="headerlink" title="Java如何实现线程安全？"></a>Java如何实现线程安全？</h4><p>volitile</p>
+<p>syncronized</p>
+<p>Final</p>
+<h4 id="Java读写锁是什么？"><a href="#Java读写锁是什么？" class="headerlink" title="Java读写锁是什么？"></a>Java读写锁是什么？</h4><h4 id="Java并发中，如何新建线程？"><a href="#Java并发中，如何新建线程？" class="headerlink" title="Java并发中，如何新建线程？"></a>Java并发中，如何新建线程？</h4><h5 id="继承Thread"><a href="#继承Thread" class="headerlink" title="继承Thread"></a>继承Thread</h5><p>子类，重写Thread的run方法，调用子类.start()</p>
+<h5 id="Runnable接口"><a href="#Runnable接口" class="headerlink" title="Runnable接口"></a>Runnable接口</h5><p>通过runnable接口的实现类，重写该接口的run()方法</p>
+<p>创建实例，将其作为Thread的target来创建Thread对象</p>
+<p>调用线程对象的start方法启动</p>
+<h5 id="Callable接口"><a href="#Callable接口" class="headerlink" title="Callable接口"></a>Callable接口</h5><p>当线程需要返回值的时候使用。</p>
+<p>通过创建Callable接口的实现类，实现call()方法。</p>
+<p>新建一个对象，然后用futureTask包装这个对象，futureTask封装了call()的返回值</p>
+<p>将futuretask对象作为Thread对象的target创建</p>
+<p>通过调用futuretask的get()方法来调用返回值</p>
+<h4 id="Java可重入方法是什么？"><a href="#Java可重入方法是什么？" class="headerlink" title="Java可重入方法是什么？"></a>Java可重入方法是什么？</h4><p>可重入函数主要用于多任务环境中，一个可重入的函数简单来说就是可以被中断的函数。即：如果一个函数执行过程中，被中断服务程序打断，去执行另外一段代码，然后恢复先前的功能，而不妨碍其早期的操作，则称该函数能是可重入的。可重入函数用于硬件中断处理，递归等应用程序 。</p>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><h4 id="py2到py3的变化？"><a href="#py2到py3的变化？" class="headerlink" title="py2到py3的变化？"></a>py2到py3的变化？</h4><h5 id="一、核心类差异"><a href="#一、核心类差异" class="headerlink" title="一、核心类差异"></a>一、核心类差异</h5><ol>
+<li>Python3 <strong>对 Unicode 字符的原生支持</strong>。<br>Python2 中使用 ASCII 码作为默认编码方式导致 string 有两种类型 str 和 unicode，Python3 只<br>支持 unicode 的 string。Python2 和 Python3 字节和字符对应关系为：</li>
+<li>Python3 采用的是<strong>绝对路径的方式进行 import</strong><br>Python2 中相对路径的 import 会导致标准库导入变得困难（想象一下，同一目录下有 file.py，如<br>何同时导入这个文件和标准库 file）。Python3 中这一点将被修改，如果还需要导入同一目录的文件必<br>须使用绝对路径，否则只能使用相关导入的方式来进行导入。</li>
+<li>Python2 中存在<strong>老式类和新式类</strong>的区别，Python3 统一采用新式类。新式类声明要求继承 object，</li>
+</ol>
+<p><strong>必须用新式类应用多重继承</strong>。<br>4. Python3 使用<strong>更加严格的缩进</strong>。Python2 的缩进机制中，1 个 tab 和 8 个 space 是等价的，所<br>以在缩进中可以同时允许 tab 和 space 在代码中共存。这种等价机制会导致部分 IDE 使用存在问题。<br>Python3 中 1 个 tab 只能找另外一个 tab 替代，因此 <strong>tab 和 space 共存会导致报错</strong></p>
+<h5 id="二、废弃类差异"><a href="#二、废弃类差异" class="headerlink" title="二、废弃类差异"></a>二、废弃类差异</h5><ol>
+<li>print 语句被 Python3 废弃，统一使用 print 函数</li>
+<li>exec 语句被 python3 废弃，统一使用 exec 函数</li>
+<li>execfile 语句被 Python3 废弃，推荐使用 exec(open(“./filename”).read())</li>
+<li>不相等操作符”&lt;&gt;”被 Python3 废弃，统一使用”!=”</li>
+<li>long 整数类型被 Python3 废弃，统一使用 int</li>
+<li>xrange 函数被 Python3 废弃，统一使用 range，Python3 中 range 的机制也进行修改并提高<br>了大数据集生成效率</li>
+<li>Python3 中这些方法再不再返回 list 对象：dictionary 关联的 keys()、values()、items()，zip()，<br>map()，filter()，但是可以通过 list 强行转换：</li>
+<li>mydict={“a”:1,”b”:2,”c”:3}</li>
+<li>mydict.keys() #&lt;built-in method keys of dict object at 0x000000000040B4C8&gt;</li>
+<li>list(mydict.keys()) #[‘a’, ‘c’, ‘b’]</li>
+<li>迭代器 iterator 的 next()函数被 Python3 废弃，统一使用 next(iterator)</li>
+<li>raw_input 函数被 Python3 废弃，统一使用 input 函数</li>
+<li>字典变量的 has_key 函数被 Python 废弃，统一使用 in 关键词</li>
+<li>file 函数被 Python3 废弃，统一使用 open 来处理文件，可以通过 io.IOBase 检查文件类型</li>
+<li>apply 函数被 Python3 废弃</li>
+<li>异常 StandardError 被 Python3 废弃，统一使用 Exception</li>
+</ol>
+<h5 id="三-、修改类差异"><a href="#三-、修改类差异" class="headerlink" title="三 、修改类差异"></a>三 、修改类差异</h5><ol>
+<li>浮点数除法操作符“/”和“//”的区别<br>“ / ”：<br>Python2：若为两个整形数进行运算，结果为整形，但若两个数中有一个为浮点数，则结果为<br>浮点数；<br>Python3:为真除法，运算结果不再根据参加运算的数的类型。<br>“//”：<br>Python2：返回小于除法运算结果的最大整数；从类型上讲，与”/“运算符返回类型逻辑一致。<br>Python3：和 Python2 运算结果一样。</li>
+<li>异常抛出和捕捉机制区别<br>Python2</li>
+<li>raise IOError, “file error” #抛出异常</li>
+<li>except NameError, err: #捕捉异常<br>Python3</li>
+<li>raise IOError(“file error”) #抛出异常</li>
+<li>except NameError as err: #捕捉异常</li>
+<li>for 循环中变量值区别<br>Python2，for 循环会修改外部相同名称变量的值</li>
+<li>i = 1</li>
+<li>print （’comprehension: ‘, [i for i in range(5)]）</li>
+<li>print （’after: i =’, i ） #i=4<br>Python3，for 循环不会修改外部相同名称变量的值</li>
+<li>i = 1</li>
+<li>print （’comprehension: ‘, [i for i in range(5)]）</li>
+<li>print （’after: i =’, i ） #i=1</li>
+<li>round 函数返回值区别<br>Python2，round 函数返回 float 类型值</li>
+<li>isinstance(round(15.5),int) #True<br>Python3，round 函数返回 int 类型值</li>
+<li>isinstance(round(15.5),float) #True</li>
+<li>比较操作符区别<br>Python2 中任意两个对象都可以比较</li>
+<li>11 &lt; ‘test’ #True<br>Python3 中只有同一数据类型的对象可以比较</li>
+<li>11 &lt; ‘test’ # TypeError: unorderable types: int() &lt; str()</li>
+</ol>
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><h4 id="OSI协议栈介绍一下"><a href="#OSI协议栈介绍一下" class="headerlink" title="OSI协议栈介绍一下"></a>OSI协议栈介绍一下</h4><p>应用层</p>
+<p>传输层</p>
+<p>网络层</p>
+<p>链路层</p>
+<p>物理层</p>
+<h4 id="ICMP是哪个层的协议？TCP呢？IP呢？"><a href="#ICMP是哪个层的协议？TCP呢？IP呢？" class="headerlink" title="ICMP是哪个层的协议？TCP呢？IP呢？"></a>ICMP是哪个层的协议？TCP呢？IP呢？</h4><p>网络层。传输层。网络层。</p>
+<h4 id="IPv4到IPv6的变化？"><a href="#IPv4到IPv6的变化？" class="headerlink" title="IPv4到IPv6的变化？"></a>IPv4到IPv6的变化？</h4><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h4 id="软连接和硬连接的区别是什么？"><a href="#软连接和硬连接的区别是什么？" class="headerlink" title="软连接和硬连接的区别是什么？"></a>软连接和硬连接的区别是什么？</h4><p>首先说一下Linux下的文件管理模式，inode存的是属性和权限，block存的是数据，一个inode对应多个block。</p>
+<p>软链接，就相当于一个快捷方式，这个文件和原来的文件是两个inode值。软链接写出了链接文件。</p>
+<p>硬链接，和原文件是一个inode值，指向同一个文件，就像一个文件有多个文件名一样。可以防止误删除。硬链接没有写出链接关系，是因为和原文件关系平等。</p>
+<p>ln -s  source  softlink 创建软链接</p>
+<p>ln source hardline 硬链接</p>
+<h4 id="Linux下查看端口号的命令是什么？"><a href="#Linux下查看端口号的命令是什么？" class="headerlink" title="Linux下查看端口号的命令是什么？"></a>Linux下查看端口号的命令是什么？</h4><p>netstat</p>
+<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><h4 id="系统介绍一下所做项目各部分之间的关系和自己的工作"><a href="#系统介绍一下所做项目各部分之间的关系和自己的工作" class="headerlink" title="系统介绍一下所做项目各部分之间的关系和自己的工作"></a>系统介绍一下所做项目各部分之间的关系和自己的工作</h4><p>猛背一通。</p>
+<h4 id="性能如何量化？如何提升？"><a href="#性能如何量化？如何提升？" class="headerlink" title="性能如何量化？如何提升？"></a>性能如何量化？如何提升？</h4><p>单一链路的中断概率和组网系统可用性。</p>
+<h4 id="你是如何debug的在项目中？远程如何调试？"><a href="#你是如何debug的在项目中？远程如何调试？" class="headerlink" title="你是如何debug的在项目中？远程如何调试？"></a>你是如何debug的在项目中？远程如何调试？</h4><p>print。我没有用过集成的debug功能。</p>
+<p>我只是通过Docker进行一个文件的映射。</p>
+<p>追问：映射用的什么协议？</p>
+<p>ssh</p>
+<h3 id="本科机器学习项目"><a href="#本科机器学习项目" class="headerlink" title="本科机器学习项目"></a>本科机器学习项目</h3><h4 id="模型是怎么构建的？"><a href="#模型是怎么构建的？" class="headerlink" title="模型是怎么构建的？"></a>模型是怎么构建的？</h4><p>深度预测网络模型包括预测网络层、时间切片全连接层和全连接层。其中，预测网络层由四个模块组成，分别是输入卷积层，卷积‐长短期记忆网络层，预测层和误差表示层。</p>
+<h4 id="数据集用的是什么？"><a href="#数据集用的是什么？" class="headerlink" title="数据集用的是什么？"></a>数据集用的是什么？</h4><p>实验室自研相机拍的红外云图。</p>
+<h4 id="误差指标是如何量化的？"><a href="#误差指标是如何量化的？" class="headerlink" title="误差指标是如何量化的？"></a>误差指标是如何量化的？</h4><p>各层、各时刻预测误差的加权和。</p>
+<h3 id="实习"><a href="#实习" class="headerlink" title="实习"></a>实习</h3><h4 id="为什么你要去复现？公司没有查看消费者日志吗？"><a href="#为什么你要去复现？公司没有查看消费者日志吗？" class="headerlink" title="为什么你要去复现？公司没有查看消费者日志吗？"></a>为什么你要去复现？公司没有查看消费者日志吗？</h4><p>因为消费者出现的bug在用户端，所以我们需要在厂内进行故障的复现与分析。</p>
+<h4 id="关于复现结果的思考"><a href="#关于复现结果的思考" class="headerlink" title="关于复现结果的思考"></a>关于复现结果的思考</h4><p>根据复现结果，发现一整个闸机序列都有问题。</p>
+<h4 id="做了哪些测试？"><a href="#做了哪些测试？" class="headerlink" title="做了哪些测试？"></a>做了哪些测试？</h4><p>高低温测试，ESD测试，NTP测试。</p>
+<h3 id="聊聊你的职业规划？"><a href="#聊聊你的职业规划？" class="headerlink" title="聊聊你的职业规划？"></a>聊聊你的职业规划？</h3><p>一开始说想先接触一线生产（码农的委婉表述），之后再跳出从产品和架构角度来思考。</p>
+<p>被指出这是逻辑层面的思考，有没有具体的技术方向？</p>
+<p>说想做云网络相关的工作。</p>
+<h3 id="你最近在看什么书？有哪些思考？"><a href="#你最近在看什么书？有哪些思考？" class="headerlink" title="你最近在看什么书？有哪些思考？"></a>你最近在看什么书？有哪些思考？</h3><p>Thinking in Java</p>
+<p>深入理解JVM</p>
+<p>Java并发编程的艺术</p>
+<p>计算机网络：自顶向下方法</p>
+<p>操作系统导论</p>
+<p>思考：Java全栈知识体系的建立，为什么Java特殊，是因为没有像C/C++一样直接和操作系统接触，操作系统上面多了一层JVM。对Java框架的思考，Java这门语言的核心不在语言本身，而在于框架的应用。</p>
+<h3 id="你身上有哪些优点是我没有问到的？畅所欲言，没事"><a href="#你身上有哪些优点是我没有问到的？畅所欲言，没事" class="headerlink" title="你身上有哪些优点是我没有问到的？畅所欲言，没事"></a>你身上有哪些优点是我没有问到的？畅所欲言，没事</h3><p>我说，我比较擅长网络层的东西，比如网络路由和拓扑规划，扯了一下OSPF和BGP，然后又说自己有一定的自学能力，大学里面培养了系统学习的思维。</p>
+<h3 id="反问：贵部门的业务有哪些？技术栈？"><a href="#反问：贵部门的业务有哪些？技术栈？" class="headerlink" title="反问：贵部门的业务有哪些？技术栈？"></a>反问：贵部门的业务有哪些？技术栈？</h3><p>我们部门是阿里云混合云的owner，软硬件都有，做SLB（负载均衡），此外还有网络控制平面和数据平面的交互。</p>
+<p>技术栈，Java，python，此外还有C和Go ; 环境：CentOS; 数据库：MySQL</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/29/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">
+                        <span class="hidden-mobile">个人网站搭建</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-mao"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
